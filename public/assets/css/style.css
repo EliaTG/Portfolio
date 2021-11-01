@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap');
 :root {
     --blue:  #1d2ec3;
     --skill_bar: #597EF7;
@@ -19,7 +20,8 @@ body::-webkit-scrollbar {
 
 body{
     background-color:  var(--bg);
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -83,37 +85,6 @@ div.logo_first img{
   right: 40px;
   cursor: pointer;
 }
-
-/* .closeIcon {
-  display: none;
-  position: absolute;
-  top: 60px; 
-  right: 40px;
-  z-index: 3;
-  height: 24px;
-  width: 24px;
-
-} */
-/* .menu {
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  transform: translateX(100%);
-  transition: transform 1s; */
-  /* transition: transform 0.3s; */
-  /* top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99; */
-  /* background-color: #ECEFF1;  */
-  /* color: white; */
-  /* margin: 0;
-  padding-top: 4rem;
-  list-style: none; */
-/* } */
-
-/* Preba */
 .menu_container{
   height: 100vh;
   width: 100%;
@@ -191,8 +162,6 @@ div.logo_first img{
 .nav_icon{
   width: 100%;
   height: 20vh;
-  /* position: absolute; */
-  /* top: 80%; */
   margin-top: 27%;
   padding: 0px;
 }
@@ -218,8 +187,6 @@ ul.icon_mobile img{
 ul.icon_mobile li {
   list-style: none;
 }
-/* preba */
-
 .wrapper-menu {
   position: absolute;
   top: 60px; 
@@ -269,9 +236,6 @@ ul.icon_mobile li {
   transform: rotate(-90deg) translateX(-3px);
   background-color: var(--bg_footer);
 }
-/* .line-menu.middle{
-  background-color: var(--blue);
-} */
 .open .line-menu.middle{
   background-color: var(--bg_footer);
 
@@ -295,7 +259,6 @@ div.introducing_text h1{
     font-size: 40px;
     margin:40px 30px; 
     text-align: justify;
-    font-weight: lighter;
 }
 div.introducing_text p{
 font-size: 19px;
@@ -318,11 +281,13 @@ div.svg_mouse img{
 
 /* About */
 section.about_page{
-    display: flex;
+    display: grid;
+    justify-content: center;
     background-color: var(--blue);
     color:#FFFFFF;
-    height: auto;
     flex-direction: column;
+    width: 100vw;
+    height: auto;
 }
 .text_about{
       height: auto;
@@ -347,7 +312,7 @@ section.about_page{
 } 
 .animation{
     position: relative;
-    display: flex;
+    /* display: grid; */
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -355,16 +320,20 @@ section.about_page{
 }
 img.svg_silla {
   position: absolute;
+  display: block;
   width: 100px;
   height: 100px;
-  bottom: 30%;
+  top: 72%;
+  left: 62%;
+  transform: translate(-50%, -50%);
 }
-img.svg_boy{
+img.svg_boy{  
     position: absolute;
-    width: 150px;
     height: 200px;
-  bottom: 32%;
-    right: 44%; 
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 img.svg_code_bracket{
     width: 70px;
@@ -375,12 +344,7 @@ img.svg_idea{
     position: absolute;
     width: 40px;
     height: 40px;
-    bottom: 89%;
-    /* bottom: 0; */
-    /* bottom: 80%; */
-    /* left: 45%; */
-    /* right: 0; */
-  
+    bottom: 89%
 }
 img.svg_planta{
   position: absolute;
@@ -399,13 +363,16 @@ img.svg_code_windows{
  
 }
 
-
 /* Hexagon */
-.hexagon {
+.hexagon{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
   width: 90px;
   height: 45px;
   background: #aaa;
-  position: relative;
+  /* position: relative; */
   transform: rotate(90deg);
   }
   .hexagon:before {
@@ -430,79 +397,59 @@ img.svg_code_windows{
   border-right: 45px solid transparent;
   border-top: 25px solid #aaa;
   }
-  #hexag1{
+
+  #hexag1 {
+    grid-column: 1 / 3;
+    grid-row: 1;
     position: absolute;
     opacity: 0.05;
+  }
+  #hexag2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+  #hexag3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
   }
   #hexag2{
     position: absolute;
     opacity: 0.04;
-    bottom: 60px;
+    bottom: 19%;
   }
   #hexag3{
     position: absolute;
     opacity: 0.1;
-    top: 60px;
+    top: 18%;
   }
   #hexag4{
     position: absolute;
     opacity: 0.1;
-    right: 70px;
-    top: 110px;
+    right: 16%;
+    top: 31%;
   }
   #hexag5{
     position: absolute;
     opacity: 0.15;
-    right: 70px;
-    bottom: 110px;
+    right: 16%;
+    bottom: 32%;
   }
   #hexag6{
     position: absolute;
     opacity: 0.06;
-    left: 70px;
-    top: 110px;
+    left: 16%;
+    top: 31%;
   }
   #hexag7{
     position: absolute;
     opacity: 0.02;
-    left: 70px;
-    bottom: 110px;
+    left: 16%;
+    bottom: 31%;
   }
-  
-/* .hexagon {
-  position: relative;
-  margin: 30px auto 0px auto;
-  width: 18px;
-  height: 60px;
-  background-color: #aaa;
-  opacity: 0.17;
-  box-shadow: 
-    126px 0px #aaa,
-    -127px 0px #aaa;
-}
-.hexagon:before, .hexagon:after {
-  content: '';
-  position: absolute;
-  width: 18px;
-  height: 60px;
-  background-color: #aaa;
-}  */
-/* .hexagon:before {
-  transform: rotate(60deg);
-  box-shadow: 
-    64px -110px #aaa,
-    -64px 110px #aaa;
-}
-.hexagon:after {
-  transform: rotate(-60deg);
-  box-shadow: 
-    64px 110px #aaa,
-    -64px -110px #aaa;
-} */
 
 /* Skill */
 section.skill_page{
-  height: auto;
+  height: 100vh;
   background-color: var(--bg);
   color: #1d2ec3;
   text-align: center;
@@ -582,13 +529,13 @@ margin: 0px 1.5px 0px 1.5px;
 
 /* Contact */
 section.contact_page {
-  height: auto;
+  height: 100vh;
   background-color: var(--bg);
  }
  div.photo-line{
  background-color: #f2f2f2;
  height: 2px;
- width: 300px;
+ width: 80vw;
  margin: 0 auto;
  position: relative;
  top: 80px;
@@ -642,7 +589,7 @@ section.contact_page {
   background-color: var(--white);
   min-width: 280px;
   margin: 5px auto;
-  height: 42px;
+  height: 30px;
   border-radius: 8px;
   outline: none;  
   padding: 7px; 
@@ -661,7 +608,7 @@ section.contact_page {
  .contact_page textarea{
   outline: none;
   min-width: 280px;
-  max-height: 200px;
+  max-height: 150px;
   padding: 7px;
   border-radius: 8px;
   background-color: var(--bg);
@@ -707,7 +654,16 @@ section.contact_page {
      margin: 0 12% 0 12%;
      /* margin-left: 12%;  */
  }
- 
+ .warning{
+   width: 200px;
+   text-align: center;
+   margin: auto;
+   color: black;
+   padding-top: 20px;
+ }
+ .formulario__input-error,.formulario__mensaje,.formulario__mensaje-exito{
+   display: none;
+ }
 /* Footer */
 footer{
   background-color: var(--bg_footer);
@@ -750,6 +706,18 @@ div.h {
   flex-direction: row;
   margin: 30px;
 } 
+.svg_footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 40vh;
+}
+.prueba_svg{
+  width: 100px;
+  height: 100px;
+  background-color: #18a0fb;
+}
 div.copyright{
   height: 15vh;
   display: flex;
@@ -768,51 +736,258 @@ div.copyright p{ display: flex; justify-content: center; align-items: center;}
   
 
  /* For tablets: */
-@media only screen and (min-width: 600px) {
-   
+ @media (min-width: 481px) and (max-width: 1024px) {
+  div.introducing_text h1{
+    font-size: 45px;
+  }
+  /* skill */
+  div.grid-container{
+    grid-template-columns: 1fr 1fr 1fr  ;
+    max-width: 700px;
+    justify-content: center;
+    margin: 40px auto 30px auto;
+  }
+  div.flex-item{
+    margin: 5px auto;
+    height: 150px;
+    width: 140px;
+  }
+  .skill_page p{
+    width: 450px;
+    margin: 4px auto; 
+  }
+  /* contact */
+  .formulario{
+    display: grid;
+    justify-content: center;
+  }
+  .input-form{
+      display: flex;
+      flex-direction: row;
+      margin: 10px 0 10px 0;
+  }
+  .contact_page label{
+    margin: 0px 10px;
+  }
+  .name, .email{
+      display: flex;
+      flex-direction: column;
+  }
+  .input-form{
+    max-width: 550px; 
+    margin: 10px 0px;
+  }
+  .contact_page input{
+    min-width: 220px;
+    margin: 5px;
+    height: 25px;
+    padding: 4px; 
+  }
+  .textarea{
+    display: flex;
+    flex-direction: column;
+  }
+
+ .textarea label{
+     margin: 2px 0px 5px 10px;
+ }
+ .contact_page textarea{
+  min-width: 450px;
+  max-height: 130px;
+  padding: 10px;
 }
+form{
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+}
+
+   
+
 
 /* For desktop: */
-@media only screen and (min-width: 768px) {
-    ul.desktop{
+@media only screen and (min-width: 1025px){
+  .navbar ul.desktop{
         visibility: visible;
     }
-    /*nav{
+   #wrapper{
+     visibility: hidden;
+   } 
+  .gsap_animation{
+    display: none;
+  }
+  header{
+    flex-direction: column;
+  	align-items: center;
+  }
+  ul.desktop{
     display: flex;
-    /* height: 10vh; */
-    
-    /* width: 50vw; */
-    /* flex-direction: row; */
-    /* margin: 10% 5%; */
-    /* width: 90vw; */
-    /* justify-content: space-between; */
-	  /* align-items: center; 
-}
-    ul.nav-links li a{
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: 400;
-        color: #FFFFFF;
-        margin: 0 15px 0 15px;
-    }   
+    flex-direction: row;
+    list-style: none;
+    color: #e5e5e5;
+    position: absolute;
+    top: 50px; 
+    right: 10%;
+  }
+  ul.desktop li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 15px 0 15px;
+  }
+  div.logo_first{
+    position: absolute;
+    top: 50px; 
+    left: 10%;
+   }
+    div.svg_mouse{
+        text-align: center;
+        margin: 4% 0%;
+    }
+    div.svg_mouse img{
+        height: 33px;
+        width: 33px;
+        transform: rotate(180deg);
+        z-index: 1;
+        margin: 0px 0px 5px 0px;
+    }
     div.myphoto{
-    margin: 10px 20px 50px 10px;
-    height: 250px;
-    width: 250px;
-    background-image: url('img/Photo.jpg');
-    border-radius:150px;
-    background-size: cover;
+      margin: 10px 20px 50px 10px;
+      height: 250px;
+      width: 250px;
+      background-image: url('../img/Photo.jpg');
+      border-radius:150px;
+      background-size: cover;
+      position: absolute;
+      right: 13%;
+    }  
+    div.introducing_text{
+      position: absolute;
+      left: 10%;
+    }
+    div.introducing_text h1{
+        font-size: 60px;
+        margin: 50px 30px 10px 0;
+        text-align: justify;
+    }
+    div.introducing_text p{
+      font-size: 19px;
+      margin: 10px 0 20px 5px;
+      text-align: initial;
+    }
+  /* skill */
+  div.skill_page{
+    height: 100vh;
+  }
+  .skill_page h2{
+      font-size: 40px;
+  }
+  .skill_page p{
+      font-size: 18px;
+  }
+  div.text_skill img{
+      height: 120px;
+      width: 120px;
+      margin: 20px 0 5px 0;
+  }
+  div.grid-container{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    justify-content: center;
+    margin: 80px auto 40px auto;
+  }
+  div.flex-item{
+      margin: 10px 15px 10px 15px;
+      height: 200px;
+      width: 200px;
+      background-color: #FFFFFF;  
+  }
+  div.flex-item img{
+    height: 100px;
+    width: 90px;
+  }
+  /* contact */
+
+  /* .input-form{
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+   } */
+ 
+  /* .textarea label{
+    position: absolute;
+    left: 10%;
+  */
+/* }   */
+
+  /* form button{
+      background-color: #1d2ec3;
+      font-size: 17px;
+      color: #FFFFFF;
+      margin: 20px auto;
+      padding: 10px 15px;
+      height: 50px;
+      min-width: 300px;
+      border-radius: 8px;
+      border: none;
+  }
+  form button img{
+      padding: 5px 0 0 5px;
+  }
+  form button .span-submit{
+      font-size: 17px;
+      color: #FFFFFF;
+      margin: 0 5px 5px 0;
+  }  */
+/* prueba */
+.formulario{
+  display: grid;
+  justify-content: center;
 }
-div.myphoto img{
-    display: grid;
-    width:250px;
-    height:250px;
-    border-radius:150px;
+.input-form{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 10px 0;
+}
+.contact_page label{
+  margin: 0px 10px;
+}
+.name, .email{
+    display: flex;
+    flex-direction: column;
+}
+.input-form{
+  max-width: 700px; 
+  margin: 10px 0px;
+}
+.contact_page input{
+  min-width: 300px;
+  /* height: 60px; */
+  margin: 5px;
+  height: 25px;
+  padding: 4px; 
+}
+.textarea{
+  display: flex;
+  flex-direction: column;
 }
 
-
-
-*/
+.textarea label{
+   margin: 2px 0px 5px 10px;
+}
+.contact_page textarea{
+min-width: 600px;
+max-height: 130px;
+padding: 10px;
+}
+form{
+margin-bottom: 10px;
+}
 
 }
 
