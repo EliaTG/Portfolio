@@ -80,16 +80,16 @@ const hamburger_menu = document.querySelector(".hamburger_menu");
 
 // Gsap Animations
 // ScrollTrigger
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
-// gsap.utils.toArray('.scroll_trigger').forEach(section => {
-//   ScrollTrigger.create({
-//     trigger: section,
-//     start: 'top top',
-//     pin: true,
-//     pinSpacing: false
-//   });
-// });
+gsap.utils.toArray('.scroll_trigger').forEach(section => {
+  ScrollTrigger.create({
+    trigger: section,
+    start: 'top top',
+    pin: true,
+    pinSpacing: false
+  });
+});
 // End of ScrollTrigger
 
 
@@ -165,9 +165,7 @@ const hamburger_menu = document.querySelector(".hamburger_menu");
     gsap.to(".overlay", {left: '0%', duration:1, ease: "expo.out",  delay: 0.08});
     gsap.to(".hamburger_menu", {left:'0%', opacity: 1, duration:1, ease: "expo.out", delay: 0.09});
 
-    alert("open");
   }else{
-    alert("close");
 
     gsap.set(".gsap_animation", {left: '100%'});
     gsap.set(".overlay",{left: '100%'});
