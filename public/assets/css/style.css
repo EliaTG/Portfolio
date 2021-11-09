@@ -20,7 +20,6 @@ body::-webkit-scrollbar {
 
 body{
     background-color:  var(--bg);
-    /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -66,11 +65,10 @@ div.logo_first img{
   font-weight: 600;
   color: #333;
   text-decoration: none;
-  /* font-family: 'Montserrat', sans-serif; */
   transition: background 0.3s;
 }
  .home{
-  padding-top: 50%;
+  padding-top: 40%;
 }
 .menuItem:hover {
   text-decoration: none;
@@ -92,7 +90,6 @@ div.logo_first img{
 
 
 .gsap_animation{
-  /* display: none; */
   visibility: hidden;
   width: 100%;
   height: 100vh;
@@ -105,13 +102,10 @@ div.logo_first img{
 }
 
 .overlay{
-  /* display: none; */
   visibility: hidden;
   width: 100%;
 	height: 100vh;
   z-index: 2;
-  /* width: 100px;
-  height: 100px; */
 	background-color: var(--progress_bar);
 	position: relative;
 	top: 0%;
@@ -247,14 +241,13 @@ ul.icon_mobile li {
 ul.desktop{
     visibility: hidden;
 }
-
+/* end of hide nav from Desktop */
 div.banner{
     display: flex;
     height: 60vh;
     width: 90vw; 
     text-align: center;
     justify-content: space-between;
-    /* z-index: 3; */
 }
 div.introducing_text h1{
     font-size: 40px;
@@ -269,8 +262,6 @@ text-align: initial;
 div.svg_mouse{
     text-align: center;
     margin: 4% 0%;
-    /* z-index: 1; */
-
 }
 div.svg_mouse img{
     height: 33px;
@@ -288,7 +279,7 @@ section.about_page{
     color:#FFFFFF;
     flex-direction: column;
     width: 100vw;
-    height: auto;
+    height: 100vh;
 }
 .text_about{
       height: auto;
@@ -313,11 +304,10 @@ section.about_page{
 } 
 .animation{
     position: relative;
-    /* display: grid; */
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 60vh;
+    height: 50vh;
 }
 img.svg_silla {
   position: absolute;
@@ -338,8 +328,6 @@ img.svg_boy{
 }
 img.svg_code_bracket{
     width: 70px;
-    /* bottom: 80%;
-    left: 10%; */
 }
 img.svg_idea{
     position: absolute;
@@ -359,9 +347,7 @@ img.svg_code_windows{
   width: 70px;
   height: 90px;
   bottom: 72%;
-  left: 17%; 
-
- 
+  left: 17%;  
 }
 
 /* Hexagon */
@@ -473,13 +459,13 @@ img.logo_skill{
   display: flex;
   height: 100px;
   width: 100px;
-   margin: 20px auto 5px auto;
+   margin: 10px auto 5px auto;
 }
 div.grid-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-  margin: 40px 0 30px 0;
+  margin: 30px 0 20px 0;
 }
 div.flex-item{
   display: flex;
@@ -491,13 +477,13 @@ div.flex-item{
   box-shadow: 5px 6px 20px 10px rgba(0, 0, 0, 0.05);
 
 
-  margin: 10px auto;
-  height: 140px;
-  width: 130px;
+  margin: 7px auto;
+  height: 120px;
+  width: 100px;
 }
 div.flex-item img{
-  height: 80px;
-  width: 70px;
+  height: 60px;
+  width: 50px;
 }
 div.flex-item > .level-bar{
 display: flex;
@@ -508,7 +494,7 @@ margin: 10px 0 0 0;
 }
 .level-bar span{
 height: 12px;
-width: 40px;
+width: 25px;
 background: #e5e5e5;
 margin: 0px 1.5px 0px 1.5px;
 
@@ -588,7 +574,7 @@ section.contact_page {
 
 .contact_page input{
   background-color: var(--white);
-  min-width: 280px;
+  width: 260px;
   margin: 5px auto;
   height: 30px;
   border-radius: 8px;
@@ -608,8 +594,8 @@ section.contact_page {
  }
  .contact_page textarea{
   outline: none;
-  min-width: 280px;
-  max-height: 100px;
+  width: 260px;
+  max-height: 90px;
   padding: 7px;
   border-radius: 8px;
   background-color: var(--bg);
@@ -637,9 +623,11 @@ section.contact_page {
      margin: 20px auto;
      padding: 10px 15px;
      height: 50px;
-     min-width: 300px;
+     min-width: 280px;
      border-radius: 8px;
      border: none;
+     cursor: pointer;
+     outline: none;
  }
  form button img{
      padding: 5px 0 0 5px;
@@ -652,19 +640,12 @@ section.contact_page {
  .contact_page label{
      color: #808080;
      font-size: 17px;
-     margin: 0 12% 0 12%;
-     /* margin-left: 12%;  */
+     width: 260px;
+     margin: 5px auto;
  }
- .warning{
-   width: 200px;
-   text-align: center;
-   margin: auto;
-   color: black;
-   padding-top: 20px;
- }
- .formulario__input-error,.formulario__mensaje,.formulario__mensaje-exito{
-   display: none;
- }
+ 
+
+
 /* Footer */
 footer{
   background-color: var(--bg_footer);
@@ -690,7 +671,7 @@ div.socialmedia_page{
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 45vh;
+  height: 35vh;
 }
 .container-socialmedia p{
   margin: 30px 0 25px 0;
@@ -710,9 +691,21 @@ div.h {
 .svg_footer{
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 40vh;
+  /* align-items: center; */
+  width: 70vw;
+  height: 50vh;
+  margin: 0px auto;
+}
+.svg_button{
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  bottom: 100px;
+  right:150px;
+  pointer-events: none;
+}
+.hide{
+  display: none;
 }
 .prueba_svg{
   width: 100px;
@@ -733,11 +726,15 @@ div.copyright p{ display: flex; justify-content: center; align-items: center;}
   height: 25px;
 }
 
-
-  
-.scroll_trigger{
-  height: auto;
+.copyright a{
+  text-decoration: none;
+  list-style: none;
+  color: #CFD8DC;
 }
+  
+/* .scroll_trigger{
+  height: auto;
+} */
  /* For tablets: */
  @media (min-width: 481px) and (max-width: 1024px) {
   header{
@@ -745,84 +742,45 @@ div.copyright p{ display: flex; justify-content: center; align-items: center;}
   }
   div.banner{
     height: auto;
-    /* width: 90vw;  */
     text-align: center;
     justify-content: center;
-    /* justify-content: space-between; */
-}
-div.svg_mouse{
-  text-align: center;
-  /* margin: 4% 0%; */
-  position: absolute;
-  bottom: 5px;
-  left: 50%;
-  margin: 0px auto;
-}
-  div.introducing_text h1{
-    font-size: 45px;
+    }
+    div.logo_first{
+      position: absolute;
+      top: 50px; 
+      left: 10%;
+     }
+    div.svg_mouse{
+      text-align: center;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      margin: 0px auto;
+    }
+    div.introducing_text{
+      position: absolute;
+      left: 10%;
+      margin-top: 10%;
+    }
+    div.introducing_text h1{
+        font-size: 45px;
+        margin: 50px 5px 10px 0;
+    }
+    div.introducing_text p{
+      width: 480px;
+      margin: 50px 5px 10px 0px;
+      text-align: initial;
   }
-  .home{
-    padding-top: 25%;
+    .home{
+      padding-top: 25%;
   }
-  .nav_icon{
-    margin-top: 10%;
+    .nav_icon{
+      margin-top: 10%;
   }
-  .gsap_animation{
-    /* display: none; */
-    /* visibility: hidden; */
-    /* width: 100%; */
-    /* height: 100vh; */
-    z-index: 2;
-    background-color: var(--blue);
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    /* overflow: hidden; */
-  }
-  
-  .overlay{
-    /* display: none; */
-    visibility: hidden;
-    width: 100%;
-    height: 100vh;
-    z-index: 2;
-    /* width: 100px;
-    height: 100px; */
-    background-color: var(--progress_bar);
-    position: relative;
-    top: 0%;
-    left: 0%;
-  }
-  .hamburger_menu{
-    visibility: hidden;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    z-index: 2;
-    background-color: var(--bg);
-    position: relative;
-  }
-  
-  .ul_menu{
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    transition: transform 1s;
-    padding: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-    list-style: none;
-  }
-  .hamburger_menu p{
-    color: white;
-    font-size: 18px;
-  }
-
   /* skill */
+  section.skill_page{
+    height: 100vh;
+  }
   div.grid-container{
     grid-template-columns: 1fr 1fr 1fr  ;
     max-width: 700px;
@@ -835,17 +793,21 @@ div.svg_mouse{
     width: 140px;
   }
   .skill_page p{
-    width: 450px;
+    max-width: 400px;
+    padding: 5px;
     margin: 4px auto; 
   }
   /* contact */
+  section.contact_page{
+    height: 100vh;
+  }
   .formulario{
     display: grid;
     justify-content: center;
   }
   .input-form{
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       /* margin: 10px 0 0 0; */
   }
   .contact_page label{
@@ -860,7 +822,7 @@ div.svg_mouse{
     margin: 10px 0px;
   }
   .contact_page input{
-    min-width: 220px;
+    min-width: 240px;
     margin: 5px;
     height: 25px;
     padding: 4px; 
@@ -879,8 +841,8 @@ div.svg_mouse{
  }
  .contact_page textarea{
   min-width: 450px;
-  max-height: 130px;
-  padding: 10px;
+  max-height: 100px;
+  padding: 4px;
 }
 form{
   margin-bottom: 0px;
@@ -968,7 +930,7 @@ form{
       text-align: initial;
     }
   /* skill */
-  div.skill_page{
+  section.skill_page{
     height: 100vh;
   }
   .skill_page h2{
@@ -998,39 +960,11 @@ form{
     width: 90px;
   }
   /* contact */
-
-  /* .input-form{
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-   } */
+ section.contact_page{
+  height: 100vh;
+ }
  
-  /* .textarea label{
-    position: absolute;
-    left: 10%;
-  */
-/* }   */
 
-  /* form button{
-      background-color: #1d2ec3;
-      font-size: 17px;
-      color: #FFFFFF;
-      margin: 20px auto;
-      padding: 10px 15px;
-      height: 50px;
-      min-width: 300px;
-      border-radius: 8px;
-      border: none;
-  }
-  form button img{
-      padding: 5px 0 0 5px;
-  }
-  form button .span-submit{
-      font-size: 17px;
-      color: #FFFFFF;
-      margin: 0 5px 5px 0;
-  }  */
-/* prueba */
 .formulario{
   display: grid;
   justify-content: center;

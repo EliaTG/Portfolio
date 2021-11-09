@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <!-- <link rel="stylesheet" href="../public/assets/css/bootstrap/bootstrap-grid.min.css"> -->
     <link rel="stylesheet" href="../public/assets/css/style.css">
-    <title>Elia Toribio</title>
+    <!-- <link rel="stylesheet" href="../public/assets/css/main.css"> -->
+    <title>Elia Toribio</title>  
 </head>
 <body>
-    <section class="homepage scroll_trigger" id="homepage">
+    <section class="homepage grid-container scroll_trigger" id="homepage">
         <div class="menu_container">   
 
                     <header>
@@ -17,12 +18,12 @@
                             <img class="logo_Animated" src="../public/assets/img/svg/logo_elia.svg" alt="Logo">
                         </div>
                         <nav class="navbar">
-                            <ul class="nav-links desktop">
+                            <ul class="nav-links desktop" id="nav_desktop">
                                 <li><a href="#aboutme" id="about-bar" id="aboutme_nav">About me</a></li>
                                 <li><a href="Elias_PortfolioDESIGN.pdf" id="cv" target="_blank id="CV">CV</a></li>
                                 <li><a href="#Work" id="Work-bar" id="Work">Work</a></li>
                             </ul>
-                        </nav> 
+                    </nav> 
                     </header>
                     
                         <div class="wrapper-menu" id="wrapper">
@@ -37,7 +38,7 @@
                             <p id="p_animated">Apasionado por la tecnología, el buen código
                             y los anime</p> 
                         </div>
-                        <div class="myphoto">
+                        <div class="myphoto" id="myphoto">
                             <!-- Here go the img photo -->
                         </div>
                     </div>
@@ -50,9 +51,10 @@
                             <div class="overlay">
                                 <div class="hamburger_menu">
                                         <ul class="ul_menu">                                    
-                                            <li><a class="menuItem home" href="#homepage">Home</a></li>
-                                            <li><a class="menuItem" href="#aboutme">About</a></li>
-                                            <li><a class="menuItem" href="#contact">Contacts</a></li>
+                                            <li><a class="menuItem home"  href="#homepage">Home</a></li>
+                                            <li><a class="menuItem"  href="#aboutme">About</a></li>
+                                            <li><a class="menuItem"  href="#contact">Contacts</a></li>
+                                            <li><a class="menuItem"  href="work.html">Work</a></li>
                                             <div class="nav_icon">
                                                 <h3>get in touch</h3>
                                                 <ul class="icon_mobile">
@@ -69,7 +71,7 @@
          </div>         
     </section> 
 
-    <section class="about_page scroll_trigger" id="aboutme">
+    <section class="about_page grid-container scroll_trigger" id="aboutme">
       
         <div class="animation">
             <img class="svg_silla" src="../public/assets/img/svg/silla.svg" alt="Chair">
@@ -97,7 +99,7 @@
                 Américas (ITLA).</p>
         </div>
     </section>
-    <section class="skill_page scroll_trigger">
+    <section class="skill_page grid-container scroll_trigger">
             <img  class="logo_skill" src="../public/assets/img/svg/code_bracket.svg" alt="Logo">
             <div class="text_skill">
                 <h2>My skills</h2>
@@ -148,55 +150,59 @@
                     </div>
              </div>   
     </section>
-    <section class="contact_page scroll_trigger" id="contact">
+    <section class="contact_page grid-container scroll_trigger" id="contact">
             <div class="photo-line"></div>
             <div class="photo-contact" ></div>
             <h2>Contact me</h2>
             <p>Estoy buscando trabajo, si deseas contratarme o escribirme para algún proyecto en específico.</p>
             <div class="formulario">
-                <form action="" method="POST" id="form">
+                <form action=""  id="form">
                     <div class="input-form">
-                        <div class="name">
-                            <label for="name">Name</label>
-                            <input type="text" id="name">
+                        <div class="name formulario__grupo" id="group_name">
+                            <label class="formulario__label"  for="name">Name</label>
+                            <input type="text" id="name" name="name">
 
-                            <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                          
                         </div>
-                        <div class="email">
-                            <label for="email">Email</label>
-                            <input type="mail" id="email">
+                        <div class="email formulario__grupo"  id="group_email">
+                            <label class="formulario__label" for="email">Email</label>
+                            <input type="mail" id="email" name="email">
 
-                            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                         
                         </div>
                     </div>
                    
-                    <div class="textarea">
-                        <label for="details">Details</label>
+                    <div class="textarea formulario__grupo"  id="group_textarea">
+                        <label class="formulario__label"  for="details">Details</label>
                         <textarea name="details" id="details" cols="30" rows="10"></textarea>
                     </div>
                     <div class="button-submit">
-                        <button type="submit"><span class="span-submit">Shoot</span>
+                        <!-- <button id="submitBtn">Hola</button> -->
+                        <!-- <input type="submit" id="submitBtn"> -->
+                        <button id="BtnSVG"><span class="span-submit">Shoot</span>
+                         <!-- <button id="BtnSVG">Get started</button> -->
                     </div>
-                    <p class="warnings" id="warnings"></p>
+                    <div class="svg_animated hide" id="svg_animated"></div>
+                    
                 <!-- </div> -->
 
-                    <div class="formulario__mensaje" id="formulario__mensaje">
-                        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
-                    </div>
+                  
     
-                    <div class="formulario__grupo formulario__grupo-btn-enviar">
-                        <!-- <button type="submit" class="formulario__btn">Enviar</button> -->
-                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
-                    </div>
                 </form>
             </div>  
  
     </section>
-    <footer class="scroll_trigger">
-            <div class="svg_footer">
-                 <div class="prueba_svg"></div>
-            </div>
-            <div class="socialmedia_page">
+    <footer class="scroll_trigger grid-container">
+        <div class="svg_footer" id="Animation_web">
+            <div id="svg"></div>
+            <!-- <svg class="svg" id="svg"> -->
+
+            <!-- </svg> -->
+            <!-- <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_vo0a1yca.json" background="transparent" opacity="0"  speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player> -->
+            <!-- <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_vo0a1yca.json" mode="bounce" background="transparent"  speed="1"  style="width: 280px; height: 280px;"  loop  autoplay></lottie-player> -->
+            
+        </div>
+          <div class="socialmedia_page">
                 <div class="container-socialmedia">
                 <div class="logo-div"><img src="../public/assets/img/svg/logo_elia.svg" alt="Logo"></div> 
                     <p>Code is fun</p>
@@ -211,12 +217,15 @@
                 </div>
             </div> 
             <div class="copyright">
-                <p>Made with <img class="coffee" src="../public/assets/img/coffee.png"  alt="Coffee"></a> by Elia</p>
+                <p>Made with <img class="coffee" src="../public/assets/img/coffee.png"  alt="Coffee"> by<a href="https://www.linkedin.com/in/elia-toribio-98195b20a/" target="_blank">&ensp;@Elia</a></p>
             </div>
-    </footer>  
+          
+    </footer> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.2/dist/locomotive-scroll.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.0/lottie.min.js"></script>
     <script src="../app.js"></script>
+    
 </body>
 </html>
