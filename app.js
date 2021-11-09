@@ -2,6 +2,7 @@ var wrapperMenu = document.querySelector('.wrapper-menu');
 const gsap_animation = document.querySelector(".gsap_animation");
 const overlay = document.querySelector(".overlay");
 const hamburger_menu = document.querySelector(".hamburger_menu");
+document.querySelector(".ul_menu").addEventListener("click", closeItem);
 
 // ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
@@ -115,23 +116,38 @@ gsap.utils.toArray('.scroll_trigger').forEach(section => {
 
   }
 });
-//
 
 
-  document.querySelector(".menuItem").addEventListener("click", closeItem);
+ 
 
     function closeItem() {
         console.log("hola");
-        gsap_animation.style.visibility = "visible";
-        overlay.style.visibility = "visible";
-        hamburger_menu.style.visibility = "visible";
-        gsap.set(".gsap_animation", {left: '100%'});
-        gsap.set(".overlay",{left: '100%'});
-        gsap.set(".hamburger_menu", {left:'100%'});
+        if (wrapperMenu.classList.toggle('open')) {
+          gsap_animation.style.visibility = "visible";
+          overlay.style.visibility = "visible";
+          hamburger_menu.style.visibility = "visible";
       
-        gsap.from(".gsap_animation", {left: '0%', duration: 0.8, ease: "expo.out", opacity: 0.9});
-        gsap.from(".overlay", {left: '0%', duration: 0.9, ease: "expo.out"});
-        gsap.from(".hamburger_menu", {left: '0%', duration: 1, ease: "expo.out",});
+          gsap.set(".gsap_animation", {left: '100%'});
+          gsap.set(".overlay", {left: '100%'});
+          gsap.set(".hamburger_menu", {left:'100%', opacity:0});
+      
+          gsap.to(".gsap_animation", {left: '0%', duration:1, ease: "expo.out", delay: 0.07});
+          gsap.to(".overlay", {left: '0%', duration:1, ease: "expo.out",  delay: 0.08});
+          gsap.to(".hamburger_menu", {left:'0%', opacity: 1, duration:1, ease: "expo.out", delay: 0.09});
+      
+        }else{
+      
+          gsap.set(".gsap_animation", {left: '100%'});
+          gsap.set(".overlay",{left: '100%'});
+          gsap.set(".hamburger_menu", {left:'100%'});
+        
+          gsap.from(".gsap_animation", {left: '0%', duration: 0.8, ease: "expo.out", opacity: 0.9});
+          gsap.from(".overlay", {left: '0%', duration: 0.9, ease: "expo.out"});
+          gsap.from(".hamburger_menu", {left: '0%', duration: 1, ease: "expo.out",});
+      
+      
+        }
+     
     }
   // if (menuItem) {
   //   console.log("hola");
