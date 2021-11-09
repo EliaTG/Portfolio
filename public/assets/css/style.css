@@ -530,8 +530,8 @@ section.contact_page {
  }
  
  .photo-contact{
-     width:138px;
-     height:138px;
+     width:110px;
+     height:110px;
      border-radius: 50%;
      border: 2px solid var(--blue);
      position: relative;
@@ -550,7 +550,6 @@ section.contact_page {
  .contact_page p{
      color: #161616;
      font-size: 16px;
-      margin: 15px 10px 30px 10px;
      text-align: center;
  }
  .formulario{
@@ -568,14 +567,14 @@ section.contact_page {
   flex-direction: column;
   justify-content: center;
 }
-.name{ margin:  0px 0px 15px 0px;}
-.email{ margin:  0px 0px 15px 0px;}
+.name{ margin:  0px 0px 5px 0px;}
+.email{ margin:  0px 0px 5px 0px;}
 
 
 .contact_page input{
   background-color: var(--white);
   width: 260px;
-  margin: 5px auto;
+  margin: 2px auto;
   height: 30px;
   border-radius: 8px;
   outline: none;  
@@ -599,7 +598,7 @@ section.contact_page {
   padding: 7px;
   border-radius: 8px;
   background-color: var(--bg);
-  margin: 5px auto;
+  margin: 2px auto;
   font-size: 16px; 
   border: 2px solid #e5e5e5;
   resize: none;
@@ -620,7 +619,7 @@ section.contact_page {
      background-color: #1d2ec3;
      font-size: 17px;
      color: #FFFFFF;
-     margin: 20px auto;
+     margin: 10px auto;
      padding: 10px 15px;
      height: 50px;
      min-width: 280px;
@@ -696,17 +695,7 @@ div.h {
   height: 50vh;
   margin: 0px auto;
 }
-.svg_button{
-  width: 280px;
-  height: 280px;
-  position: absolute;
-  bottom: 100px;
-  right:150px;
-  pointer-events: none;
-}
-.hide{
-  display: none;
-}
+
 .prueba_svg{
   width: 100px;
   height: 100px;

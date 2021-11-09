@@ -120,8 +120,7 @@ gsap.utils.toArray('.scroll_trigger').forEach(section => {
 
  
 
-    function closeItem() {
-        console.log("hola");
+    function closeItem() { 
         if (wrapperMenu.classList.toggle('open')) {
           gsap_animation.style.visibility = "visible";
           overlay.style.visibility = "visible";
@@ -164,26 +163,27 @@ gsap.utils.toArray('.scroll_trigger').forEach(section => {
       name: "Man coding Animation",
 
   });
+  
+  // const play = document.getElementById('BtnSVG');
+  // const svgAnimated = document.getElementById('svg_animated');
+  // const animButton = bodymovin.loadAnimation({
+  //       container: svgButton,
+  //       renderer: 'svg',
+  //       loop: false,
+  //       autoplay: false,
+  //       path: 'https://assets5.lottiefiles.com/private_files/lf30_atznrcwb.json',
+  //       name: "Rick & Morty Animation",
 
-  const play = document.getElementById('BtnSVG');
-  const svgAnimated = document.getElementById('svg_animated');
-  const animButton = bodymovin.loadAnimation({
-        container: svgButton,
-        renderer: 'svg',
-        loop: false,
-        autoplay: false,
-        path: 'https://assets5.lottiefiles.com/private_files/lf30_atznrcwb.json',
-        name: "Rick & Morty Animation",
-
-    });
-    play.addEventListener('click', function(){
-      // e.preventDefault();
-      alert("hola");
-      // e.preventDefault();
-      // play.style.display = "block";
-      // animButton.goToAndPlay(0, true);
+  //   });
+    //  function play() { 
+    
+    //   // e.preventDefault();
+    //   alert("hola");
+    //   // e.preventDefault();
+    //   // play.style.display = "block";
+    //   // animButton.goToAndPlay(0, true);
      
 
-    });
+    // }
   
   
