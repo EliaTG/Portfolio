@@ -148,10 +148,8 @@ gsap.utils.toArray('.scroll_trigger').forEach(section => {
         }
      
     }
-  // if (menuItem) {
-  //   console.log("hola");
-  // }
- 
+
+
 //
   const svgContainer = document.getElementById('svg');
   const animItem = bodymovin.loadAnimation({

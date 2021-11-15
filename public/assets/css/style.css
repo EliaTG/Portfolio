@@ -37,6 +37,7 @@ section.homepage{
     background-attachment: fixed;
     background-size: cover;
     color: #FFFFFF;
+    overflow-x: hidden;
 }  
 header{
     min-height: 25vh;
@@ -280,6 +281,7 @@ section.about_page{
     flex-direction: column;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
 .text_about{
       height: auto;
@@ -440,6 +442,7 @@ section.skill_page{
   background-color: var(--bg);
   color: #1d2ec3;
   text-align: center;
+  overflow-x: hidden;
 }
 .skill_page h2{
   font-size: 40px;
@@ -477,47 +480,20 @@ div.flex-item{
   box-shadow: 5px 6px 20px 10px rgba(0, 0, 0, 0.05);
 
 
-  margin: 7px auto;
-  height: 120px;
+  margin: 5px auto;
+  height: 100px;
   width: 100px;
 }
 div.flex-item img{
   height: 60px;
   width: 50px;
 }
-div.flex-item > .level-bar{
-display: flex;
-flex-direction: row;
-border-radius: 100%;
-margin: 10px 0 0 0;
-
-}
-.level-bar span{
-height: 12px;
-width: 25px;
-background: #e5e5e5;
-margin: 0px 1.5px 0px 1.5px;
-
-}
-.level-bar .first{
-  background: var(--progress_bar);
-  border-left: 50px;
-  border-radius: 24px 0px 0px 24px;
-}
-.level-bar .second{
-  border-radius: none;
-}
-.level-bar .third{
-  border-radius: 0px 24px 24px 0px;
-}
-#html-medium,#css-medium{
-  background: var(--progress_bar);  
-}
 
 /* Contact */
 section.contact_page {
   height: 100vh;
   background-color: var(--bg);
+  overflow-x: hidden;
  }
  div.photo-line{
  background-color: #f2f2f2;
@@ -652,6 +628,7 @@ footer{
   height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 footer p{
   font-size: 18px;
@@ -721,9 +698,7 @@ div.copyright p{ display: flex; justify-content: center; align-items: center;}
   color: #CFD8DC;
 }
   
-/* .scroll_trigger{
-  height: auto;
-} */
+
  /* For tablets: */
  @media (min-width: 481px) and (max-width: 1024px) {
   header{
@@ -778,8 +753,12 @@ div.copyright p{ display: flex; justify-content: center; align-items: center;}
   }
   div.flex-item{
     margin: 5px auto;
-    height: 150px;
-    width: 140px;
+    height: 120px;
+    width: 120px;
+  }
+  div.flex-item img{
+    height: 60px;
+    width: 60px;
   }
   .skill_page p{
     max-width: 400px;
@@ -796,7 +775,7 @@ div.copyright p{ display: flex; justify-content: center; align-items: center;}
   }
   .input-form{
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       /* margin: 10px 0 0 0; */
   }
   .contact_page label{
@@ -807,11 +786,11 @@ div.copyright p{ display: flex; justify-content: center; align-items: center;}
       flex-direction: column;
   }
   .input-form{
-    max-width: 550px; 
+    max-width: 500px; 
     margin: 10px 0px;
   }
   .contact_page input{
-    min-width: 240px;
+    width: 200px;
     margin: 5px;
     height: 25px;
     padding: 4px; 
@@ -829,17 +808,14 @@ div.copyright p{ display: flex; justify-content: center; align-items: center;}
      margin: 2px 0px 5px 10px;
  }
  .contact_page textarea{
-  min-width: 450px;
-  max-height: 100px;
+  min-width: 480px;
+  max-height: 150px;
   padding: 4px;
+  margin: 2px auto;
 }
 form{
   margin-bottom: 0px;
 }
-
-
-
-
 
 
 }
@@ -940,8 +916,8 @@ form{
   }
   div.flex-item{
       margin: 10px 15px 10px 15px;
-      height: 200px;
-      width: 200px;
+      height: 140px;
+      width: 140px;
       background-color: #FFFFFF;  
   }
   div.flex-item img{
@@ -952,7 +928,10 @@ form{
  section.contact_page{
   height: 100vh;
  }
- 
+ .photo-contact{
+  width:137px;
+  height:137px;
+ }
 
 .formulario{
   display: grid;
