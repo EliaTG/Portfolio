@@ -18,8 +18,8 @@
                         <nav class="navbar">
                             <ul class="nav-links desktop" id="nav_desktop">
                                 <li><a href="#aboutme" id="about-bar" id="aboutme_nav">About me</a></li>
-                                <li><a href="Elias_PortfolioDESIGN.pdf" id="cv" target="_blank id="CV">CV</a></li>
-                                <li><a href="#Work" id="Work-bar" id="Work">Work</a></li>
+                                <li><a href="Elias_PortfolioDESIGN.pdf" id="cv" target="blank id="CV">CV</a></li>
+                                <li><a href="#Work" id="Work-bar" target="blank" id="Work">Work</a></li>
                             </ul>
                     </nav> 
                     </header>
@@ -33,8 +33,7 @@
                     <div class="banner">
                         <div class="introducing_text">
                             <h1 id="h1_animated">Web Developer <br> Junior</h1>
-                            <p id="p_animated">Apasionado por la tecnología, el buen código
-                            y los anime</p> 
+                            <p id="p_animated">Enthusiastic for technology and clean code</p> 
                         </div>
                         <div class="myphoto" id="myphoto">
                             <!-- Here go the img photo -->
@@ -53,12 +52,13 @@
                                             <li><a class="menuItem"  href="#aboutme">About</a></li>
                                             <li><a class="menuItem"  href="#contact">Contacts</a></li>
                                             <li><a class="menuItem"  href="work.html">Work</a></li>
+                                            <li><a class="menuItem" href="Elias_PortfolioDESIGN.pdf"  target="blank">CV</a></li>
                                             <div class="nav_icon">
                                                 <h3>get in touch</h3>
                                                 <ul class="icon_mobile">
-                                                    <li><a href="mailto:elitoribio01@email.com"><img src="../public/assets/img/email.png" alt="Send me an Email"></a></li>   
-                                                    <li> <a href="https://www.linkedin.com/in/elia-toribio-98195b20a/" target="_blank"><img src="../public/assets/img/linkedin.png" alt="Linkedin"></a>
-                                                    <li> <a href="https://github.com/EliaTG" target="_blank"><img src="../public/assets/img/github.png" alt="Github"></a></li>    
+                                                    <li><a href="mailto:elitoribio01@email.com"><img src="../public/assets/img/svg/email_black.svg" alt="Send me an Email"></a></li>   
+                                                    <li> <a href="https://www.linkedin.com/in/elia-toribio-98195b20a/" target="blank"><img src="../public/assets/img/linkedin.png" alt="Linkedin"></a>
+                                                    <li> <a href="https://github.com/EliaTG" target="blank"><img src="../public/assets/img/github.png" alt="Github"></a></li>    
                                                 </ul>
                                             </div> 
                                     </ul>
@@ -72,23 +72,7 @@
     <section class="about_page grid-container scroll_trigger" id="aboutme">
       
         <div class="animation">
-            <img class="svg_silla" src="../public/assets/img/svg/silla.svg" alt="Chair">
-            <!-- <img class="svg_code_bracket" src="../public/assets/img/svg/code_bracket.svg" alt="Code Bracket"> -->
-            <img class="svg_boy" src="../public/assets/img/svg/boy.svg" alt="Boy">
-            <!-- <img class="svg_code_windows" src="../public/assets/img/svg/code_window.svg" alt="Code Window"> -->
-            <!-- <img class="svg_planta" src="../public/assets/img/svg/planta.svg" alt="Plant"> -->
-            <!-- <img class="svg_idea" src="../public/assets/img/svg/idea.svg" alt="Light bulb">  -->
-
-                <!-- <div class="grid-container wrappper">
-                    <div class="grid-item hexagon" id="hexag1">1</div>
-                    <div class="grid-item hexagon" id="hexag2">2</div>
-                    <div class="grid-item hexagon" id="hexag3">3</div>
-                    <div class="grid-item hexagon" id="hexag4">4</div>
-                    <div class="grid-item hexagon" id="hexag5">5</div>
-                    <div class="grid-item hexagon" id="hexag6">6</div>
-                    <div class="grid-item hexagon" id="hexag7">7</div>
-                </div> -->
-
+                <div class="svg_skill" id="svg_skill"></div>
         </div>
         <div class="text_about">
             <h2>I'm Elia Toribio</h2>
@@ -122,7 +106,7 @@
                     </div>
              </div>   
     </section>
-    <section class="contact_page grid-container scroll_trigger" id="contact">
+    <!-- <section class="contact_page grid-container scroll_trigger" id="contact">
             <div class="photo-line"></div>
             <div class="photo-contact" ></div>
             <h2>Contact me</h2>
@@ -159,28 +143,28 @@
                 </form>
             </div>  
  
-    </section>
+    </section> -->
     <footer class="scroll_trigger grid-container">
+        <div class="logo-div"><img src="../public/assets/img/svg/logo_elia.svg" alt="Logo"></div> 
         <div class="svg_footer" id="Animation_web">
             <div id="svg"></div>
             
         </div>
-          <div class="socialmedia_page">
+          <div class="socialmedia_page" id="contact">
                 <div class="container-socialmedia">
-                <div class="logo-div"><img src="../public/assets/img/svg/logo_elia.svg" alt="Logo"></div> 
-                    <p>Code is fun</p>
+                    <p>Let's talk<img src="../public/assets/img/paper_plane.png" alt="Paper Plane"></p>
                     <div class="href_footer">
                         <div class="h">
-                            <a href="mailto:elitoribio01@email.com"><img src="../public/assets/img/email_white.png" alt="Send me an Email"></a>
-                            <a href="https://www.linkedin.com/in/elia-toribio-98195b20a/" target="_blank"><img src="../public/assets/img/svg/linkedin.svg" alt="Linkedin"></a>
-                            <a href="https://github.com/EliaTG" target="_blank"><img src="../public/assets/img/svg/github.svg" alt="Github"></a>    
+                            <a id="email" href="mailto:elitoribio01@email.com"><img  width="40px" height="40px" src="../public/assets/img/email.png" alt="Send me an Email"></a>
+                            <a href="https://www.linkedin.com/in/elia-toribio-98195b20a/" target="blank"><img src="../public/assets/img/svg/linkedin.svg" alt="Linkedin"></a>
+                            <a href="https://github.com/EliaTG" target="blank"><img src="../public/assets/img/svg/github.svg" alt="Github"></a>    
                         </div>
                     
                     </div>
                 </div>
             </div> 
             <div class="copyright">
-                <p>Made with <img class="coffee" src="../public/assets/img/coffee.png"  alt="Coffee"> by<a href="https://www.linkedin.com/in/elia-toribio-98195b20a/" target="_blank">&ensp;@Elia</a></p>
+                <p>Made with <img class="coffee" src="../public/assets/img/coffee.png"  alt="Coffee"> by<a href="https://www.linkedin.com/in/elia-toribio-98195b20a/" target="blank">&ensp;@Elia</a></p>
             </div>
           
     </footer> 

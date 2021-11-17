@@ -162,26 +162,14 @@ gsap.utils.toArray('.scroll_trigger').forEach(section => {
 
   });
   
-  // const play = document.getElementById('BtnSVG');
-  // const svgAnimated = document.getElementById('svg_animated');
-  // const animButton = bodymovin.loadAnimation({
-  //       container: svgButton,
-  //       renderer: 'svg',
-  //       loop: false,
-  //       autoplay: false,
-  //       path: 'https://assets5.lottiefiles.com/private_files/lf30_atznrcwb.json',
-  //       name: "Rick & Morty Animation",
+  const svgSkill = document.getElementById('svg_skill');
+  const animSkill = bodymovin.loadAnimation({
+      container: svgSkill,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'https://assets4.lottiefiles.com/packages/lf20_gjsy1lag.json',
+      name: "Man debugging Animation",
 
-  //   });
-    //  function play() { 
-    
-    //   // e.preventDefault();
-    //   alert("hola");
-    //   // e.preventDefault();
-    //   // play.style.display = "block";
-    //   // animButton.goToAndPlay(0, true);
-     
+  });
 
-    // }
-  
-  
