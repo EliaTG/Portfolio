@@ -518,7 +518,8 @@ section.work_page{
     height: 12px;
     width: 12px;
     border-radius: 50%;
-    background: #ffffff;
+    /* background: #ffffff; */
+    background: #000;
     opacity: 0.5;
     margin: 0 8px;
 }
