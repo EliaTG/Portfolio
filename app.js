@@ -5,16 +5,16 @@ const hamburger_menu = document.querySelector(".hamburger_menu");
 document.querySelector(".ul_menu").addEventListener("click", closeItem);
 
 // ScrollTrigger
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
-// gsap.utils.toArray('.scroll_trigger').forEach(section => {
-//   ScrollTrigger.create({
-//     trigger: section,
-//     start: 'top top',
-//     pin: true,
-//     pinSpacing: false
-//   });
-// });
+gsap.utils.toArray('.scroll_trigger').forEach(section => {
+  ScrollTrigger.create({
+    trigger: section,
+    start: 'top top',
+    pin: true,
+    pinSpacing: false
+  });
+});
 // End of ScrollTrigger
 
 
@@ -166,7 +166,7 @@ class Slider {
       this.nextItemIndex = 1;
       this.isSliding = false;
       
-      // Set Item Indexs if active class is specified on an element other than the first.
+    /*   Set Item Indexs if active class is specified on an element other than the first.*/
       for (let i = 0; i < this.sliderItems.length; i++) {
           if (this.sliderItems[i].classList.contains("active")){
               this.currentIndex = i;

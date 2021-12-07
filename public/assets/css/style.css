@@ -158,7 +158,7 @@ div.logo_first img{
 .nav_icon{
   width: 100%;
   height: 20vh;
-  margin-top: 24%;
+  margin-top: 20%;
   padding: 0px;
 }
 .nav_icon h3{
@@ -284,11 +284,11 @@ section.about_page{
     overflow-x: hidden;
 }
 .text_about{
-      height: auto;
+      /* height: auto; */
+      height: 50vh;
       width: 100%;
       flex-direction:column;
       justify-content: center;
-      margin: 6% 0 20% 0;
 } 
 .about_page h2{
       margin: 30px 0 20px 0;
@@ -301,7 +301,6 @@ section.about_page{
 .about_page p{ 
       max-width: 84vw; 
       text-align: justify;
-      /* font-size: 16px;  */
       font-size: 1.175em;
       font-weight: 400;
       margin: 0 auto 0 auto;
@@ -317,7 +316,7 @@ section.about_page{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 40vh;
+    height: 35vh;
 }
 .svg_skill{
   display: flex;
@@ -391,7 +390,9 @@ section.work_page{
 }
 .work_page h2{
   color: #616161;
+  margin-bottom: 10vh;
 }
+
 /* Slider */
 .slider-item{
   height: 20rem;
@@ -399,6 +400,19 @@ section.work_page{
 }
 .slider-item:first-child{
   background: linear-gradient(180deg,#f3cbab,#feedca);
+}
+/* .slider-item:last-child{
+  background:#5499C7;#00CB9D
+
+} */
+.slider-item:nth-child(2) {
+  background: linear-gradient(180deg,#7C6FA2,#F6EBFF);
+}
+.slider-item:nth-child(3) {
+  background: #68BAA5;
+}
+.slider-item:nth-child(4) {
+  background: #258594;
 }
 
 .box_container{
@@ -597,7 +611,7 @@ div.h {
 
 div.copyright{
   height: 15vh;
-  display: flex;
+  /* display: flex; */
   border-top:1px solid #ffffff;
   justify-content: center;
 }
