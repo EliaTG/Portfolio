@@ -143,9 +143,9 @@ gsap.utils.toArray('.scroll_trigger').forEach(section => {
 
   });
   
-  const svgSkill = document.getElementById('svg_skill');
+  const svgAbout = document.getElementById('svg_about');
   const animSkill = bodymovin.loadAnimation({
-      container: svgSkill,
+      container: svgAbout,
       renderer: 'svg',
       loop: true,
       autoplay: true,
