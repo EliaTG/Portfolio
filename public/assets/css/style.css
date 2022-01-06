@@ -421,10 +421,6 @@ section.work_page{
 .slider-item:first-child{
   background: linear-gradient(180deg,#f3cbab,#feedca);
 }
-/* .slider-item:last-child{
-  background:#5499C7;#00CB9D
-
-} */
 .slider-item:nth-child(2) {
   background: linear-gradient(180deg,#7C6FA2,#F6EBFF);
 }
@@ -810,7 +806,7 @@ div.copyright p{ display: flex; justify-content: center; align-items: center; ma
       margin: 20px 0 5px 0;
   }
   div.grid{
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr ;
     justify-content: center;
     margin: 80px auto 40px auto;
   }
