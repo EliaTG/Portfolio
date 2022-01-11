@@ -430,7 +430,10 @@ section.work_page{
 .slider-item:nth-child(4) {
   background: #258594;
 }
-
+.slider-item:nth-child(5) {
+  /* background: #768BAA; */
+  background: linear-gradient(180deg,#768BAA,#f3cbab);
+}
 .box_container{
  padding: 2rem;
   height: 100%; 
