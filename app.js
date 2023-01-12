@@ -131,14 +131,14 @@ gsap.utils.toArray('.scroll_trigger').forEach(section => {
     }
 
 
-//
+// Animations
   const svgContainer = document.getElementById('svg');
   const animItem = bodymovin.loadAnimation({
       container: svgContainer,
       renderer: 'svg',
       loop: true,
       autoplay: true,
-      path: 'https://assets8.lottiefiles.com/packages/lf20_vo0a1yca.json',
+      path: 'https://assets8.lottiefiles.com/packages/lf20_es4p9zph.json',
       name: "Man coding Animation",
 
   });
